@@ -11,19 +11,18 @@
         <p class="additional-block-info">среди лучших университетов России</p>
       </ul>
       <ul class="block-info">
-        <p class="number-info">10</p>
-        <p class="title-block-info">МЕСТО</p>
-        <p class="additional-block-info">среди лучших университетов России</p>
+        <p class="number-info">1920</p>
+        <p class="title-block-info">ГОД</p>
+        <p class="additional-block-info">основания УрФУ</p>
       </ul>
       <ul class="block-info">
-        <p class="number-info">10</p>
-        <p class="title-block-info">МЕСТО</p>
-        <p class="additional-block-info">среди лучших университетов России</p>
+        <p class="number-info">12</p>
+        <p class="title-block-info">ФАКУЛЬТЕТОВ</p>
       </ul>
       <ul class="block-info">
-        <p class="number-info">10</p>
-        <p class="title-block-info">МЕСТО</p>
-        <p class="additional-block-info">среди лучших университетов России</p>
+        <p class="number-info">450</p>
+        <p class="title-block-info">ПРОГРАММ</p>
+        <p class="additional-block-info">бакалавриата, специалитета</p>
       </ul>
     </li>
 
@@ -47,7 +46,7 @@
 .blocks-information-university {
   display: flex;
   text-decoration: none;
-  margin-left: 70px;
+  margin-left: 130px;
 }
 
 .block-info {
