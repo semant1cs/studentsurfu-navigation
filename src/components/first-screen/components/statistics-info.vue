@@ -1,32 +1,13 @@
 <script setup>
 
+import BlockInfo from "@/components/first-screen/components/block-info.vue";
 </script>
 
 <template>
   <div class="window-info">
     <li class="blocks-information-university">
-      <ul class="block-info">
-        <p class="number-info">10</p>
-        <p class="title-block-info">МЕСТО</p>
-        <p class="additional-block-info">среди лучших университетов России</p>
-      </ul>
-      <ul class="block-info">
-        <p class="number-info">1920</p>
-        <p class="title-block-info">ГОД</p>
-        <p class="additional-block-info">основания УрФУ</p>
-      </ul>
-      <ul class="block-info">
-        <p class="number-info">12</p>
-        <p class="title-block-info">ФАКУЛЬТЕТОВ</p>
-      </ul>
-      <ul class="block-info">
-        <p class="number-info">450</p>
-        <p class="title-block-info">ПРОГРАММ</p>
-        <p class="additional-block-info">бакалавриата, специалитета</p>
-      </ul>
+      <block-info/>
     </li>
-
-
   </div>
 </template>
 
@@ -48,25 +29,4 @@
   text-decoration: none;
   margin-left: 130px;
 }
-
-.block-info {
-  margin-top: 57px;
-  text-align: center;
-  margin-right: 30px;
-}
-
-.number-info {
-  color: #F7654A;
-  font-size: 72px;
-}
-
-.title-block-info {
-  font-size: 32px;
-}
-
-.additional-block-info {
-  color: gray;
-  font-size: 18px;
-}
-
 </style>
