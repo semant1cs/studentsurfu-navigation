@@ -9,9 +9,17 @@
     <ul class="post-block">
       <div class="block-info">
         <img src="./../../assets/history_icon.png" class="history-icon" alt="история урфу">
-        <br>
         История чего-либо...
       </div>
+    </ul>
+    <ul class="post-block">
+      <div class="block-info"></div>
+    </ul>
+    <ul class="post-block">
+      <div class="block-info"></div>
+    </ul>
+    <ul class="post-block">
+      <div class="block-info"></div>
     </ul>
     <ul class="post-block">
       <div class="block-info"></div>
@@ -24,8 +32,10 @@
 
 <style scoped>
 .title-block {
-  margin-top: 165px;
+  margin-top: 117px;
   text-align: center;
+  color: black;
+  font-size: 36px;
 }
 
 .history-icon {
@@ -36,6 +46,10 @@
   margin-top: 66px;
 
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+
   align-self: center;
   margin-left: auto;
   margin-right: auto;
@@ -51,6 +65,7 @@
 }
 
 .post-block {
-  margin-right: 27px;
+  margin-bottom: 30px;
 }
+
 </style>

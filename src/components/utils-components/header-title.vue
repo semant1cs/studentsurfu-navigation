@@ -5,6 +5,7 @@
 
 <template>
   <div class="colored_field">
+    ㅤ
     <h3 class="title-text">История УрФУ</h3>
   </div>
 </template>
@@ -14,10 +15,18 @@
   background-color: #F7654A;
   width: 1920px;
   height: 181px;
+  margin: 0;
+  padding: 0;
 }
 
 .title-text {
   margin-left: 400px;
+  width: 320px;
+  height: 88px;
+  vertical-align: center;
+  margin-top: 25px;
 
+  color: white;
+  font-size: 48px;
 }
 </style>
