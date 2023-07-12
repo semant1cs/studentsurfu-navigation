@@ -1,32 +1,26 @@
 <template>
-  <div v-for="post in postsVK" :key="post.id">
-    <div id='vk_post_-22941070_60351'></div>
-    <div id='vk_post_-22941070_60351'></div>
-    <div id='vk_post_-22941070_60351'></div>
-  </div>
+<!--  <div v-for="post in postsUrFU" :key="post.id" class="post-block">-->
+<!--    <div v-bind:id=post.ref></div>-->
+<!--  </div>-->
 
 
-  <!--  <div v-for="post in posts" :key="post.id">-->
-  <!--    <ul class="post-block">-->
-  <!--      <img class="photo-post" v-bind:src=post.image_source v-bind:alt=post.alternative_text_photo>-->
-  <!--      <div class="orange-line"></div>-->
-  <!--      <h2 class="title-post">{{ post.title_post }}</h2>-->
-  <!--      <p class="text-post"> {{ post.text_post }}</p>-->
-  <!--    </ul>-->
-  <!--  </div>-->
+      <div v-for="post in posts" :key="post.id">
+        <ul class="post-block">
+          <img class="photo-post" v-bind:src=post.image_source v-bind:alt=post.alternative_text_photo>
+          <div class="orange-line"></div>
+          <h2 class="title-post">{{ post.title_post }}</h2>
+          <p class="text-post"> {{ post.text_post }}</p>
+        </ul>
+      </div>
 </template>
 
 <script>
-import {postVK} from "../../../api-vk";
+//import {postsVK} from "../../../api-vk";
 
 export default {
   data() {
     return {
-      postsVK: [
-        {id: 1, post: postVK},
-        {id: 2, post: postVK},
-        {id: 3, post: postVK}
-      ],
+      //postsUrFU: postsVK,
       posts: [
         {
           id: 1,
@@ -68,7 +62,9 @@ export default {
 }
 
 .post-block {
-  margin-right: 30px;
+  width: 350px;
+  height: 580px;
+  margin-left: 30px;
 }
 
 .title-post {
