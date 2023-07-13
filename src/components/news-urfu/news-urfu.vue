@@ -22,11 +22,9 @@ import PostBlock from "@/components/news-urfu/post-block.vue";
 .posts-block {
   display: flex;
   align-self: center;
-  margin-left: auto;
-  margin-right: auto;
   width: 1110px;
 
-  margin-top: 13px;
+  margin: 13px auto 200px;
 }
 
 </style>

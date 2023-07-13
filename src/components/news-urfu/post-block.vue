@@ -1,50 +1,26 @@
 <template>
-<!--  <div v-for="post in postsUrFU" :key="post.id" class="post-block">-->
-<!--    <div v-bind:id=post.ref></div>-->
-<!--  </div>-->
+  <div v-for="post in this.postsUrFU" :key="post.id">
+    <ul class="post-block">
+      <img class="photo-post" :src=post.url_photo alt="Фотография публикации">
+      <div class="orange-line"></div>
+      <h2 class="title-post">{{ post.text.substr(0, 100) }}...</h2>
+      <p class="text-post"> {{ post.text.substr(100, 230) }}</p>
+    </ul>
+  </div>
 
-
-      <div v-for="post in posts" :key="post.id">
-        <ul class="post-block">
-          <img class="photo-post" v-bind:src=post.image_source v-bind:alt=post.alternative_text_photo>
-          <div class="orange-line"></div>
-          <h2 class="title-post">{{ post.title_post }}</h2>
-          <p class="text-post"> {{ post.text_post }}</p>
-        </ul>
-      </div>
 </template>
 
 <script>
-//import {postsVK} from "../../../api-vk";
-
 export default {
   data() {
     return {
-      //postsUrFU: postsVK,
-      posts: [
-        {
-          id: 1,
-          image_source: "https://i.imgur.com/17IqV2P.png",
-          alternative_text_photo: "Photo Post 1",
-          title_post: "Заголовок поста 1",
-          text_post: "Текст поста 1"
-        },
-        {
-          id: 2,
-          image_source: "https://i.imgur.com/17IqV2P.png",
-          alternative_text_photo: "Photo Post 2",
-          title_post: "Заголовок поста 2",
-          text_post: "Текст поста 2"
-        },
-        {
-          id: 3,
-          image_source: "https://i.imgur.com/17IqV2P.png",
-          alternative_text_photo: "Photo Post 3",
-          title_post: "Заголовок поста 3",
-          text_post: "Текст поста 3"
-        }
-      ]
+      postsUrFU: {},
     }
+  },
+  mounted() {
+    fetch('http://26.223.83.180:8000/API/news/')
+        .then((response) => response.json())
+        .then((data) => this.postsUrFU = data);
   }
 }
 
@@ -53,6 +29,11 @@ export default {
 
 
 <style scoped>
+
+.photo-post {
+  width: 350px;
+  height: 380px;
+}
 
 .orange-line {
   width: 55px;
