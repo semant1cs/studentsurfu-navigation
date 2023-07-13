@@ -12,8 +12,13 @@
 }
 
 </style>
-<script setup>
+<script>
 import FirstScreen from "@/components/first-screen/first-screen.vue";
 import NewsUrfu from "@/components/news-urfu/news-urfu.vue";
 import HistoryUrfu from "@/components/history-urfu/history-urfu.vue";
+
+export default {
+  components: {HistoryUrfu, NewsUrfu, FirstScreen}
+}
+
 </script>
