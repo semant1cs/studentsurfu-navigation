@@ -1,9 +1,9 @@
 <script>
 
-import HistoryBlock from "@/components/history-urfu/history-block.vue";
+import HostelBlock from "@/components/campus-info/hostel-block.vue";
 
 export default {
-  components: {HistoryBlock},
+  components: {HostelBlock},
   data() {
     return {
       isPopupOpen: false,
@@ -45,9 +45,8 @@ export default {
 </script>
 
 <template>
-  <h4 class="title-block">Как зарождался УрФУ?</h4>
   <li class="post-blocks">
-    <history-block
+    <hostel-block
         v-for="article in articles"
         :key="article.id"
         :article="article"
@@ -56,24 +55,15 @@ export default {
 </template>
 
 <style scoped>
-.title-block {
-  margin-top: 117px;
-  text-align: center;
-  color: black;
-  font-size: 36px;
-}
 
 .post-blocks {
-  margin-top: 66px;
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
 
   align-self: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 66px auto 88px;
 
   height: 530px;
   width: 1110px;

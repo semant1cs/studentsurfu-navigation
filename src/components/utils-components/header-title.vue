@@ -23,7 +23,7 @@
 
 .title-text {
   margin-left: 400px;
-  width: 320px;
+  width: auto;
   height: 88px;
   vertical-align: center;
   margin-top: 25px;
