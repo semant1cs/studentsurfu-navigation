@@ -53,7 +53,7 @@ export default {
   background-color: white;
   border-radius: 10px;
   width: 1000px;
-  height: 500px;
+  height: auto;
   text-align: center;
 }
 

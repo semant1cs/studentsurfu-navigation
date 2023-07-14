@@ -5,8 +5,10 @@
 
 <template>
   <div class="colored_field">
-    ㅤ
-    <h3 class="title-text">История УрФУ</h3>
+    <div class="invisible_block">⠀</div>
+    <h3 class="title-text">
+      <slot name="title"></slot>
+    </h3>
   </div>
 </template>
 

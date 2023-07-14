@@ -2,6 +2,7 @@
   <first-screen/>
   <news-urfu/>
   <history-urfu/>
+  <info-academic-buildings/>
 </template>
 
 <style>
@@ -16,9 +17,11 @@
 import FirstScreen from "@/components/first-screen/first-screen.vue";
 import NewsUrfu from "@/components/news-urfu/news-urfu.vue";
 import HistoryUrfu from "@/components/history-urfu/history-urfu.vue";
+import InfoAcademicBuildings from "@/components/info-academic-buildings/info-academic-buildings.vue";
+
 
 export default {
-  components: {HistoryUrfu, NewsUrfu, FirstScreen}
+  components: {InfoAcademicBuildings, HistoryUrfu, NewsUrfu, FirstScreen},
 }
 
 </script>

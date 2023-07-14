@@ -1,7 +1,4 @@
 <script>
-
-import PopupHistory from "@/components/utils-components/popup-history.vue";
-
 export default {
   components: {PopupHistory},
   data() {
@@ -42,6 +39,8 @@ export default {
     };
   },
 }
+
+import PopupHistory from "@/components/utils-components/popup-history.vue";
 </script>
 
 <template>
