@@ -11,32 +11,38 @@ export default {
         {
           id: 1,
           title: 'any title 1',
-          main_text: 'any article 1'
+          img_src: "./../../assets/lc_s/lc_rtf.jpg",
+          main_text: '123'
         },
         {
           id: 2,
           title: 'any title 2',
-          main_text: 'any article text 2'
+          img_src: '',
+          main_text: '123'
         },
         {
           id: 3,
           title: 'any title 3',
-          main_text: 'any article 3'
+          img_src: '',
+          main_text: '123'
         },
         {
           id: 4,
           title: 'any title 4',
-          main_text: 'any article 4'
+          img_src: '',
+          main_text: '123'
         },
         {
           id: 5,
           title: 'any title 5',
-          main_text: 'any article text 5'
+          img_src: '',
+          main_text: '123'
         },
         {
           id: 6,
           title: 'any title 6',
-          main_text: 'any article 6'
+          img_src: '',
+          main_text: '14124'
         },
       ]
     };

@@ -23,8 +23,7 @@ export default {
   <ul class="post-block">
     <div class="block-info">
       <button @click="isPopupOpen = true" class="popup_button">
-        <img src="./../../assets/history_icon.png" class="history-icon" alt="история урфу">
-        <p class="title">{{ article.title }}</p>
+        <img src="./../../assets/sk_s/sk_11.jpg" class="learning_campus_img" alt="история урфу">
         <popup-history :is-open="isPopupOpen"
                        @close="isPopupOpen = false">
           <template #title_article><p class="title_article">{{ article.title }}</p></template>
@@ -36,14 +35,16 @@ export default {
 </template>
 
 <style scoped>
-.history-icon {
+.learning_campus_img {
   align-self: center;
+  width: 250px;
+  height: 250px;
 }
 
 .popup_button {
   border: none;
   outline: none;
-  background-color: #F7F7F7;
+  background-color: #FFFFFF;
   width: 350px;
   height: 250px;
 }
@@ -56,11 +57,6 @@ export default {
 
 .post-block {
   margin-bottom: 30px;
-}
-
-.title {
-  margin-top: 14px;
-  font-size: 21px;
 }
 
 .title_article {

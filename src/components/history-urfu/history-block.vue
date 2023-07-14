@@ -23,7 +23,7 @@ export default {
   <ul class="post-block">
     <div class="block-info">
       <button @click="isPopupOpen = true" class="popup_button">
-        <img src="./../../assets/history_icon.png" class="history-icon" alt="история урфу">
+        <img src="./../../assets/history_icon.png" class="learning_campus_img" alt="история урфу">
         <p class="title">{{ article.title }}</p>
         <popup-history :is-open="isPopupOpen"
                        @close="isPopupOpen = false">
@@ -36,7 +36,7 @@ export default {
 </template>
 
 <style scoped>
-.history-icon {
+.learning_campus_img {
   align-self: center;
 }
 

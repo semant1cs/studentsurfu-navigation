@@ -1,42 +1,51 @@
 <script>
 
-import HistoryBlock from "@/components/history-urfu/history-block.vue";
+import BlockAcademicBuilding from "@/components/academic-buildings-info/block-academic-building.vue";
 
 export default {
-  components: {HistoryBlock},
+  components: {BlockAcademicBuilding},
   data() {
     return {
       isPopupOpen: false,
       articles: [
         {
           id: 1,
-          title: 'any title 1',
-          main_text: 'any article 1'
+          title: 'Институт радиоэлектроники и информационных технологий-РТФ',
+          img_src: "./../../assets/lc_s/lc_rtf.jpg",
+          main_text: 'Институт радиоэлектроники и информационных технологий - РТФ - это один из крупнейших институтов Урала, осуществляющий подготовку профессионалов ИТ-сферы, информационной безопасности и защиты информации, а также специалистов в разработке систем IoT,  радиотехнике, электронике и системах связи. Его отличает индивидуальный подход к каждому студенту, многопрофильность и большой спектр возможностей, доступных обучающимся.\n' +
+              '\n' +
+              'Благодаря сотрудничеству с ведущими предприятиями и компаниями региона и страны институт постоянно развивается и совершенствуется: открываются новые научные центры и лаборатории, проводятся научно-практические конференции, а также реализуются совместные проекты студентов с партнерами-заказчиками.  ' +
+              'В ИРИТ-РТФ существует возможность осваивать образовательные программы по очной форме обучения, а также по очно-заочной и заочной ускоренной формам обучения, в зависимости от индивидуальных возможностей и желания поступающего. Любой абитуриент может поступить как на бюджетную основу (более 1200 бюджетных мест), так и с полным возмещением затрат (контракт). Наш институт дает возможность каждому студенту выстраивать гибкий график учебы, получать социальную поддержку (материальная помощь), а также предоставляет отсрочку от армии. Кроме того, можно получить дополнительное образование.'
         },
         {
           id: 2,
           title: 'any title 2',
-          main_text: 'any article text 2'
+          img_src: '',
+          main_text: '123'
         },
         {
           id: 3,
           title: 'any title 3',
-          main_text: 'any article 3'
+          img_src: '',
+          main_text: '123'
         },
         {
           id: 4,
           title: 'any title 4',
-          main_text: 'any article 4'
+          img_src: '',
+          main_text: '123'
         },
         {
           id: 5,
           title: 'any title 5',
-          main_text: 'any article text 5'
+          img_src: '',
+          main_text: '123'
         },
         {
           id: 6,
           title: 'any title 6',
-          main_text: 'any article 6'
+          img_src: '',
+          main_text: '123'
         },
       ]
     };
@@ -46,7 +55,7 @@ export default {
 
 <template>
   <li class="post-blocks">
-    <history-block
+    <block-academic-building
         v-for="article in articles"
         :key="article.id"
         :article="article"
