@@ -15,7 +15,7 @@
 <style scoped>
 .colored_field {
   background-color: #F7654A;
-  width: 1920px;
+  width: auto;
   height: 181px;
   margin: 0;
   padding: 0;

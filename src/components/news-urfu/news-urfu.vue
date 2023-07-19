@@ -1,17 +1,40 @@
-<script setup>
+<script>
+import axios from "axios";
+import PostItem from "@/components/news-urfu/post-item.vue"
 
-import PostBlock from "@/components/news-urfu/post-block.vue";
+export default {
+  components: {PostItem},
+  data() {
+    return {
+      posts: [],
+    }
+  },
+  methods: {
+    async fetchPosts() {
+      try {
+        const response = await axios.get('https://jsonplaceholder.typicode.com/photos?_limit=3');
+        this.posts = response.data;
+      } catch (e) {
+        alert('Ошибка')
+      }
+    }
+  },
+  mounted() {
+    this.fetchPosts()
+  }
+}
+
+
 </script>
 
 <template>
   <h2 class="title-news">НОВОСТИ УРАЛЬСКОГО <br> ФЕДЕРАЛЬНОГО</h2>
   <li class="posts-block">
-    <post-block/>
+    <post-item v-for="post in this.posts" :key="post.id" :post="post"/>
   </li>
 </template>
 
 <style scoped>
-
 .title-news {
   text-align: center;
   color: #404149;

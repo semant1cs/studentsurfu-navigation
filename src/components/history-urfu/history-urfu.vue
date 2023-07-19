@@ -1,6 +1,6 @@
 <script setup>
 
-import HeaderTitle from "@/components/utils-components/header-title.vue";
+import HeaderTitle from "@/components/UI/header-title.vue";
 import HistoryBlocks from "@/components/history-urfu/history-blocks.vue";
 </script>
 

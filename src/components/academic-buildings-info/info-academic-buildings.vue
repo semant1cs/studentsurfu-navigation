@@ -1,6 +1,6 @@
 <script setup>
 
-import HeaderTitle from "@/components/utils-components/header-title.vue";
+import HeaderTitle from "@/components/UI/header-title.vue";
 import BlocksAcademicBuildings from "@/components/academic-buildings-info/blocks-academic-buildings.vue";
 </script>
 

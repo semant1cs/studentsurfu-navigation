@@ -1,7 +1,7 @@
 <script>
 
 
-import PopupHistory from "@/components/utils-components/popup-history.vue";
+import PopupHistory from "@/components/UI/popup-history.vue";
 
 export default {
   components: {PopupHistory},

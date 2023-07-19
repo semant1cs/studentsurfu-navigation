@@ -41,27 +41,27 @@ export default {
         },
         {
           id: 2,
-          title: 'any title 2',
+          title: 'Преподавательский состав',
           main_text: 'any article text 2'
         },
         {
           id: 3,
-          title: 'any title 3',
+          title: 'История реорганизации и переименования университета',
           main_text: 'any article 3'
         },
         {
           id: 4,
-          title: 'any title 4',
+          title: 'Имени Ельцина',
           main_text: 'any article 4'
         },
         {
           id: 5,
-          title: 'any title 5',
+          title: 'Музейно-выставочный комплекс',
           main_text: 'any article text 5'
         },
         {
           id: 6,
-          title: 'any title 6',
+          title: 'Онлайн-музей',
           main_text: 'any article 6'
         },
       ]

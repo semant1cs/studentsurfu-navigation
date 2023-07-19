@@ -1,30 +1,23 @@
 <template>
-  <div v-for="post in this.postsUrFU" :key="post.id">
+  <div>
     <ul class="post-block">
-      <img class="photo-post" :src=post.url_photo alt="Фотография публикации">
+      <img :src="post.url" :alt="post.title" class="photo-post">
       <div class="orange-line"></div>
-      <h2 class="title-post">{{ post.text.substr(0, 100) }}...</h2>
-      <p class="text-post"> {{ post.text.substr(100, 230) }}</p>
+      <h2 class="title-post">{{ post.title.substr(0, 100) }}...</h2>
+      <p class="text-post"> {{ post.title.substr(100, 230) }}</p>
     </ul>
   </div>
 
 </template>
-
 <script>
 export default {
-  data() {
-    return {
-      postsUrFU: {},
+  props: {
+    post: {
+      type: Object,
+      required: true
     }
-  },
-  mounted() {
-    fetch('http://26.223.83.180:8000/API/news/')
-        .then((response) => response.json())
-        .then((data) => this.postsUrFU = data);
   }
 }
-
-
 </script>
 
 
