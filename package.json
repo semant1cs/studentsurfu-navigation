@@ -6,10 +6,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "server": "json-server -w server/db.json"
+    "json": "json-server -w server/db.json",
+    "servejson": "concurrently \"npm run serve\" \"npm run json\""
   },
   "dependencies": {
     "axios": "^1.4.0",
+    "concurrently": "^8.2.0",
     "core-js": "^3.8.3",
     "json-server": "^0.17.3",
     "normalize.css": "^8.0.1",
