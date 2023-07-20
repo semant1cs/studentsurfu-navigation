@@ -3,7 +3,7 @@
 export default {
   data() {
     return {
-      posts:
+      history_articles:
           [
             {
               id: 1,
@@ -69,9 +69,12 @@ export default {
 </script>
 
 <template>
-  <blocks-list-page title="История УрФУ" small_title="Как зарождался Уральский Федеральный?" :posts="this.posts"/>
+  <blocks-list-page title="История УрФУ" small_title="Как зарождался Уральский Федеральный?" :posts=this.history_articles />
+  <div class="history_urfu_page"></div>
 </template>
 
 <style scoped>
-
+.history_urfu_page {
+  margin-bottom: 50px;
+}
 </style>

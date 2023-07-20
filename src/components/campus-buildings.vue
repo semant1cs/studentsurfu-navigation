@@ -1,13 +1,20 @@
-<script>
+<template>
+  <div class="campus-page">
+    <blocks-list-page title="Кампус" :posts=this.campus_buildings_articles />
+  </div>
+</template>
 
-import HostelBlock from "@/components/campus-info/hostel-block.vue";
+<script>
+import BlocksListPage from "@/components/UI/blocks-list-page.vue";
 
 export default {
-  components: {HostelBlock},
+  components: {BlocksListPage},
+  setup() {
+    return {}
+  },
   data() {
     return {
-      isPopupOpen: false,
-      articles: [
+      campus_buildings_articles: [
         {
           id: 1,
           title: 'Студенческое общежитие №11',
@@ -54,33 +61,13 @@ export default {
           main_text: '14124'
         },
       ]
-    };
-  },
+    }
+  }
 }
 </script>
 
-<template>
-  <li class="post-blocks">
-    <hostel-block
-        v-for="article in articles"
-        :key="article.id"
-        :article="article"
-    />
-  </li>
-</template>
-
 <style scoped>
-
-.post-blocks {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-  align-self: center;
-  margin: 66px auto 88px;
-
-  height: 530px;
-  width: 1110px;
+.campus-page {
+  margin-bottom: 130px;
 }
 </style>

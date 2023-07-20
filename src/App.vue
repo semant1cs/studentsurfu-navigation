@@ -2,8 +2,8 @@
   <first-screen/>
   <news-urfu/>
   <history-urfu/>
-  <info-academic-buildings/>
-  <campus-info/>
+  <academic-buildings/>
+  <campus-buildings/>
   <custom-footer/>
 </template>
 
@@ -18,14 +18,16 @@
 <script>
 import FirstScreen from "@/components/first-screen/first-screen.vue";
 import NewsUrfu from "@/components/news-urfu/news-urfu.vue";
-import InfoAcademicBuildings from "@/components/academic-buildings-info/info-academic-buildings.vue";
-import CampusInfo from "@/components/campus-info/campus-info.vue";
-import CustomFooter from "@/components/custom-footer.vue";
 import HistoryUrfu from "@/components/history-urfu.vue";
+import AcademicBuildings from "@/components/academic-buildings.vue";
+import CampusBuildings from "@/components/campus-buildings.vue";
+import CustomFooter from "@/components/custom-footer.vue";
 
 
 export default {
-  components: {HistoryUrfu, CustomFooter, CampusInfo, InfoAcademicBuildings, NewsUrfu, FirstScreen},
+  components: {
+    CampusBuildings, AcademicBuildings, HistoryUrfu, CustomFooter, NewsUrfu, FirstScreen
+  },
 }
 
 </script>
