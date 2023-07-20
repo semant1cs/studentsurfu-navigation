@@ -1,6 +1,8 @@
-<script setup>
+<script>
 
-
+export default {
+  name: 'header-title',
+}
 </script>
 
 <template>

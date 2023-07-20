@@ -1,6 +1,5 @@
 <script setup>
 
-import HeaderTitle from "@/components/UI/header-title.vue";
 import HostelsBlock from "@/components/campus-info/hostels-block.vue";
 </script>
 

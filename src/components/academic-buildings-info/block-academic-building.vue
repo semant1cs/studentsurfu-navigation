@@ -1,10 +1,10 @@
 <script>
 
 
-import PopupHistory from "@/components/UI/popup-history.vue";
+import ModalWindow from "@/components/UI/modal-window.vue";
 
 export default {
-  components: {PopupHistory},
+  components: {ModalWindow},
   data() {
     return {
       isPopupOpen: false,
@@ -24,11 +24,11 @@ export default {
     <div class="block-info">
       <button @click="isPopupOpen = true" class="popup_button">
         <img src="./../../assets/lc_s/lc_rtf.jpg" class="learning_campus_img" alt="история урфу">
-        <popup-history :is-open="isPopupOpen"
+        <modal-window :is-open="isPopupOpen"
                        @close="isPopupOpen = false">
           <template #title_article><p class="title_article">{{ article.title }}</p></template>
           <template #text_article><p class="main_text_article">{{ article.main_text }}</p></template>
-        </popup-history>
+        </modal-window>
       </button>
     </div>
   </ul>

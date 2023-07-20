@@ -14,6 +14,7 @@
 
 <script>
 export default {
+  name: 'modal-window',
   props: {
     isOpen: {
       type: Boolean,

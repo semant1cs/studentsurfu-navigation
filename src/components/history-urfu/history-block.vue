@@ -1,10 +1,8 @@
 <script>
 
 
-import PopupHistory from "@/components/UI/popup-history.vue";
-
 export default {
-  components: {PopupHistory},
+  components: {},
   data() {
     return {
       isPopupOpen: false,
@@ -25,11 +23,11 @@ export default {
       <button @click="isPopupOpen = true" class="popup_button">
         <img src="./../../assets/history_icon.png" class="learning_campus_img" alt="история урфу">
         <p class="title">{{ article.title }}</p>
-        <popup-history :is-open="isPopupOpen"
-                       @close="isPopupOpen = false">
+        <modal-window :is-open="isPopupOpen"
+                      @close="isPopupOpen = false">
           <template #title_article><p class="title_article">{{ article.title }}</p></template>
           <template #text_article><p class="main_text_article">{{ article.main_text }}</p></template>
-        </popup-history>
+        </modal-window>
       </button>
     </div>
   </ul>

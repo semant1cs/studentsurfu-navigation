@@ -21,7 +21,8 @@ import NewsUrfu from "@/components/news-urfu/news-urfu.vue";
 import HistoryUrfu from "@/components/history-urfu/history-urfu.vue";
 import InfoAcademicBuildings from "@/components/academic-buildings-info/info-academic-buildings.vue";
 import CampusInfo from "@/components/campus-info/campus-info.vue";
-import CustomFooter from "@/components/UI/custom-footer.vue";
+import CustomFooter from "@/components/custom-footer.vue";
+
 
 
 export default {
