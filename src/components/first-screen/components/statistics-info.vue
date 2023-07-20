@@ -1,6 +1,6 @@
 <script setup>
 
-import BlockInfo from "@/components/first-screen/components/block-info.vue";
+import BlockInfo from "@/components/first-screen/components/numbers-info.vue";
 </script>
 
 <template>

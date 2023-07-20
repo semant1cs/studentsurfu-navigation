@@ -1,17 +1,15 @@
 <script>
-
-
 export default {
-  components: {},
+  name: 'block-item',
+  props: {
+    post: {
+      type: Object,
+      required: true
+    }
+  },
   data() {
     return {
       isPopupOpen: false,
-    };
-  },
-  props: {
-    article: {
-      type: Object,
-      required: true
     }
   }
 }
@@ -22,11 +20,11 @@ export default {
     <div class="block-info">
       <button @click="isPopupOpen = true" class="popup_button">
         <img src="./../../assets/history_icon.png" class="learning_campus_img" alt="история урфу">
-        <p class="title">{{ article.title }}</p>
+        <p class="title">{{ post.title }}</p>
         <modal-window :is-open="isPopupOpen"
                       @close="isPopupOpen = false">
-          <template #title_article><p class="title_article">{{ article.title }}</p></template>
-          <template #text_article><p class="main_text_article">{{ article.main_text }}</p></template>
+          <template #title_article><p class="title_article">{{ post.title }}</p></template>
+          <template #text_article><p class="main_text_article">{{ post.main_text }}</p></template>
         </modal-window>
       </button>
     </div>
@@ -34,9 +32,6 @@ export default {
 </template>
 
 <style scoped>
-.learning_campus_img {
-  align-self: center;
-}
 
 .popup_button {
   border: none;
@@ -69,4 +64,5 @@ export default {
   font-size: 17px;
   color: gray;
 }
+
 </style>
