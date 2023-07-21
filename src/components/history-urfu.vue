@@ -22,7 +22,12 @@ export default {
 </script>
 
 <template>
-  <blocks-list-page title="История УрФУ" small_title="Как зарождался Уральский Федеральный?" :posts=this.history_articles />
+  <blocks-list-page
+      title="История УрФУ"
+      small_title="Как зарождался Уральский Федеральный?"
+      :posts="this.history_articles"
+      :required-title-in-preview="true"
+  />
   <div class="history_urfu_page"></div>
 </template>
 

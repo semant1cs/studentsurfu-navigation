@@ -11,6 +11,9 @@ export default {
     posts: {
       type: Array,
       required: true
+    },
+    requiredTitleInPreview: {
+      type: Boolean
     }
   },
 }
@@ -23,7 +26,7 @@ export default {
   </header-title>
   <h3 class="title-block">{{ small_title }}</h3>
   <li class="post-blocks">
-    <block-item v-for="post in posts" :key="post.id" :post="post"/>
+    <block-item v-for="post in posts" :key="post.id" :post="post" :required-title-in-preview=requiredTitleInPreview />
   </li>
 </template>
 

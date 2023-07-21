@@ -5,6 +5,9 @@ export default {
     post: {
       type: Object,
       required: true
+    },
+    requiredTitleInPreview: {
+      type: Boolean
     }
   },
   data() {
@@ -19,8 +22,8 @@ export default {
   <ul class="post-block">
     <div class="block-info">
       <button @click="isPopupOpen = true" class="popup_button">
-        <img src="./../../assets/history_icon.png" class="learning_campus_img" alt="история урфу">
-        <p class="title">{{ post.title }}</p>
+        <img :src=post.img_src class="learning_campus_img" alt="история урфу">
+        <p v-if:=requiredTitleInPreview class="title">{{ post.title }}</p>
         <modal-window :is-open="isPopupOpen"
                       @close="isPopupOpen = false">
           <template #title_article><p class="title_article">{{ post.title }}</p></template>
