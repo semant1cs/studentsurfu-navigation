@@ -7,8 +7,8 @@
       <p class="text-post"> {{ post.title.substr(100, 230) }}</p>
     </ul>
   </div>
-
 </template>
+
 <script>
 export default {
   props: {
@@ -19,7 +19,6 @@ export default {
   }
 }
 </script>
-
 
 <style scoped>
 

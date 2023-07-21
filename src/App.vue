@@ -1,6 +1,6 @@
 <template>
   <first-screen/>
-  <news-urfu/>
+  <carousel-news/>
   <history-urfu/>
   <academic-buildings/>
   <campus-buildings/>
@@ -17,16 +17,17 @@
 </style>
 <script>
 import FirstScreen from "@/components/first-screen/first-screen.vue";
-import NewsUrfu from "@/components/news-urfu/news-urfu.vue";
 import HistoryUrfu from "@/components/history-urfu.vue";
 import AcademicBuildings from "@/components/academic-buildings.vue";
 import CampusBuildings from "@/components/campus-buildings.vue";
 import CustomFooter from "@/components/custom-footer.vue";
+import CarouselNews from "@/components/news-urfu/carousel-news.vue";
 
 
 export default {
   components: {
-    CampusBuildings, AcademicBuildings, HistoryUrfu, CustomFooter, NewsUrfu, FirstScreen
+    CarouselNews,
+    CampusBuildings, AcademicBuildings, HistoryUrfu, CustomFooter, FirstScreen
   },
 }
 
