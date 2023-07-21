@@ -21,6 +21,7 @@ export default {
       posts: [],
       currentIndexPost: 0,
       unreadPosts: 0,
+      maximumViewedPosts: 3,
     }
   },
   methods: {
@@ -28,13 +29,15 @@ export default {
       try {
         const response = await axios.get('https://jsonplaceholder.typicode.com/photos?_limit=5');
         this.posts = response.data;
-        this.unreadPosts = this.posts.length - this.currentIndexPost - 3;
+        if (this.posts.length >= this.maximumViewedPosts) {
+          this.unreadPosts = this.posts.length - this.maximumViewedPosts;
+        }
       } catch (e) {
         alert('Ошибка')
       }
     },
     slideToNextPost() {
-      if (this.currentIndexPost < this.posts.length - 3) {
+      if (this.currentIndexPost < this.posts.length - this.maximumViewedPosts) {
         this.unreadPosts--;
         this.currentIndexPost++
       }
